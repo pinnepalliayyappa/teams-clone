@@ -1,1 +1,39 @@
-<p>video-sharing works!</p>
+<h2 class="left-align">Web SDK Video Quickstart</h2>
+<div class="row">
+    <div>
+        <button type="button" id="join" (click)="joinmethod()">Join</button>
+        <button type="button" id="leave" (click)="leavemethod()">Leave</button>
+    </div>
+</div>
+
+<div class="video-call-wrapper">
+    <!-- <div class="incoming-video">
+    </div> 
+    <div class="outgoing-video position-relative">  -->
+        <div class="outgoing-video position-relative"> 
+            <div class="incoming-video" style="position: absolute;">
+            </div> 
+        <div class="d-flex justify-content-center align-items-center gap-1 position-absolute"> 
+            <button type="button" (click)="joinmethod()"> 
+                <span class="mdi mdi-phone-hangup icon-font">
+                </span> 
+            </button> 
+            <button type="button" (click)="mute()" [disabled]="micBtn"> 
+                <span class="mdi mdi-microphone icon-font" *ngIf="micIcon">
+                </span> 
+                <span class="mdi mdi-microphone-off icon-font" *ngIf="muteIcon">
+                </span> 
+            </button> 
+            <button type="button" (click)="videoonoff()" [disabled]="videoBtn"> 
+                <span class="mdi mdi-video icon-font" *ngIf="videoIcon">
+                </span> 
+                <span class="mdi mdi-video-off icon-font" *ngIf="videooffIcon">
+                </span> 
+            </button> 
+            <button type="button" (click)="leavemethod()"> 
+                <span class="mdi mdi-phone-hangup icon-font">
+                </span> 
+            </button> 
+        </div> 
+    </div>
+ </div>

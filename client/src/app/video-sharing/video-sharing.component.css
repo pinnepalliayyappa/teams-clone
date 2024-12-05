@@ -1,0 +1,17 @@
+.video-call-wrapper {
+    width: 100%; 
+    height: calc(100vh 10rem);
+     min-height: 50vh;
+}
+.outgoing-video{ 
+    height: 100%; 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.8); 
+} 
+.incoming-video { 
+    z-index: 9; 
+    height: 16.6%; 
+    width: 25%; 
+    bottom: 0.5rem; 
+    right: 0.5rem; 
+}
